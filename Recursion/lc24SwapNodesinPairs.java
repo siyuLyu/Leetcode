@@ -1,4 +1,6 @@
 public class lc24SwapNodesinPairs {
+    //Time O(n) n represent the number of nodes
+    // Space O(n) n represent the number of nodes call stack
     public static ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) return head;
         // Take second node and first node
