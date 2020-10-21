@@ -28,7 +28,7 @@ public class lc206ReverseLinkedList {
     
     
     public ListNode reverseList(ListNode head) {
-        //base case -> id no more node, the current node become head
+        //base case -> if no more node, the current node become head
         if (head == null || head.next == null) return head;
         //Recursive call
         ListNode newHead = reverseList(head.next);
