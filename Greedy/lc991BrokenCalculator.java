@@ -1,0 +1,19 @@
+class Solution {
+    //Time: O(logY)
+    //divide from Y using greedy
+    public int brokenCalc(int X, int Y) {
+        int count = 0;
+        
+        while (Y > X) {
+            if (Y % 2 == 0) {
+                Y /= 2;
+            } else {
+                Y++;
+            }
+            count++;
+        }
+        
+        return count + (X-Y);
+        
+    }
+}
